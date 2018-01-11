@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detail</h1>
+    <div *ngIf="doktertje">
+        <h1>{{doktertje.naam}}</h1>
+        <h1>Algemene info</h1>
+        <p>Naam: {{doktertje.naam}}</p>
+        <h1>Adres</h1>
+        <p>Straat:{{doktertje.straat}} {{doktertje.huisnr}}</p>
+        <p>Gemeente: {{doktertje.postcode}} {{doktertje.gemeente}}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dokter</title>
+</head>
+<body>
+    <header>
+        <h1>Huisartsen</h1>
+    </header>
+    <div class="dokters">
+            <input type="text"  placeholder="zoek een huisarts">
+        <div *ngFor="let d of dokters" routerLink="/detail/{{d.fid}}">
+            <p>{{d.naam}}</p>
+            <img src="../assets/kruis.png" alt="Kruis">
+        </div>
+    </div>
+</body>
+</html>
